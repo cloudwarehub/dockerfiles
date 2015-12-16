@@ -16,4 +16,6 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 EXPOSE 22
+ADD ./start.sh /root/start.sh
+RUN chmod u+x /root/start.sh
 CMD /root/start.sh
