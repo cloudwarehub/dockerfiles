@@ -16,4 +16,4 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 EXPOSE 22
-CMD /root/rstudio-0.99.485/bin/rstudio & && /usr/sbin/sshd -D
+CMD  /usr/sbin/sshd -D && /root/rstudio-0.99.485/bin/rstudio
